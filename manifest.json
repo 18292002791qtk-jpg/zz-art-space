@@ -2,7 +2,7 @@
   "name": "寨子空间 Zz Art Space",
   "short_name": "寨子空间",
   "description": "西安城中村的独立艺术空间 — 展览、活动、工作坊",
-  "start_url": "寨子空间介绍.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",
   "theme_color": "#0a0a0a",
