@@ -333,6 +333,40 @@
     opacity: 1;
   }
 
+  .exh-details {
+    margin-top: 12px;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+  }
+  .exh-details summary {
+    cursor: pointer;
+    font-size: 0.78rem;
+    color: var(--accent);
+    font-weight: 300;
+    letter-spacing: 1px;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: opacity 0.2s;
+    padding: 2px 0;
+  }
+  .exh-details summary:hover { opacity: 0.8; }
+  .exh-details summary::marker { color: var(--accent); font-size: 0.7rem; }
+  .exh-details[open] summary { margin-bottom: 10px; }
+  .exh-details .detail-body {
+    font-size: 0.82rem;
+    color: var(--fg-muted);
+    line-height: 1.8;
+  }
+  .exh-details .detail-body a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(196,154,108,0.2);
+    transition: border-color 0.2s;
+  }
+  .exh-details .detail-body a:hover { border-color: var(--accent); }
+
   @media (max-width: 440px) {
     .exh-grid { grid-template-columns: 1fr; }
     .exh-card .exh-img-wrap { height: 200px; }
@@ -664,6 +698,14 @@
           <h4>生生之谓易</h4>
           <div class="exh-artist">张材嘉</div>
           <p>张材嘉个展，以《周易》哲学命题为引，探讨万物在阴阳之道推动下不断生成与更新。展期：2024.12.7—2025.1.1。策展人：强天锴；艺术总监：高飞霞。</p>
+          <details class="exh-details">
+            <summary>公众号详情</summary>
+            <div class="detail-body">
+              <a href="pdfs/展览现场 ｜生生之谓易-张材嘉个展.pdf" target="_blank">📄 展览现场回顾PDF →</a>
+              &nbsp;
+              <a href="pdfs/生生之谓易-张材嘉个展图集及视频.pdf" target="_blank">📄 图集及视频PDF →</a>
+            </div>
+          </details>
         </div>
       </div>
 
@@ -675,6 +717,12 @@
           <h4>时间的厚度</h4>
           <div class="exh-artist">郭鑫强</div>
           <p>郭鑫强个展，以慢速快门拍摄家族成员肖像，不同快门速度对应不同透明度的亚克力板，叠加呈现"时间在生命中的厚度"。展期：2024.11.3—11.10。</p>
+          <details class="exh-details">
+            <summary>公众号详情</summary>
+            <div class="detail-body">
+              <a href="pdfs/展览现场｜时间的厚度.pdf" target="_blank">📄 展览现场回顾PDF →</a>
+            </div>
+          </details>
         </div>
       </div>
 
@@ -686,6 +734,16 @@
           <h4>百气生相</h4>
           <div class="exh-artist">王雪飞</div>
           <p>王雪飞个展，以《聊斋志异》中"万物皆可为妖"的意象为灵感，将不可见的边界力量转化为可感知的存在。展期：2024.10.27—11.27。策展人：赵蓓；学术主持：杨晨。</p>
+          <details class="exh-details">
+            <summary>公众号详情</summary>
+            <div class="detail-body">
+              <a href="pdfs/展览现场｜"百气生相"——王雪飞个展（上）.pdf" target="_blank">📄 展览现场回顾（上）PDF →</a>
+              &nbsp;
+              <a href="pdfs/展览现场｜"百气生相"卡牌系列（中）.pdf" target="_blank">📄 卡牌系列（中）PDF →</a>
+              &nbsp;
+              <a href="pdfs/展览现场｜"百气生相"卡牌系列（下）.pdf" target="_blank">📄 卡牌系列（下）PDF →</a>
+            </div>
+          </details>
         </div>
       </div>
 
@@ -697,6 +755,12 @@
           <h4>塑形：手指证件照</h4>
           <div class="exh-artist">乔飞尔</div>
           <p>聚焦学生因长期书写导致手指变形的社会现象，拍摄117名学生的手指肖像，结合纪实摄影与问卷调研，探讨身体与身份的关系。展期：2024.8.17—9.1。策展人：强天锴。</p>
+          <details class="exh-details">
+            <summary>公众号详情</summary>
+            <div class="detail-body">
+              <a href="pdfs/寨子展讯塑形：手指证件照.pdf" target="_blank">📄 展讯PDF →</a>
+            </div>
+          </details>
         </div>
       </div>
 
@@ -719,6 +783,14 @@
           <h4>记忆之场</h4>
           <div class="exh-artist">卢秋宇</div>
           <p>卢秋宇个展，展出40余幅近年创作，探讨记忆与场所、历史与当下之间的深层关联。展期：2024.3.5—3.15。策展人：牛童。</p>
+          <details class="exh-details">
+            <summary>公众号详情</summary>
+            <div class="detail-body">
+              策展前言：卢秋宇一直往返在想象和记忆混合的空间之中，捕捉下当下的切片。摄影在他的手上是旅途的见证，这些相片潜影在胶片上并存放在一个隐秘的黑匣子里。由感官引发的主观想象和客观现实相互交融，记忆与场所、历史与当下之间的深层关联在光影中浮现。
+              <br><br>
+              <a href="pdfs/寨子展讯｜卢秋宇个展 “ 记忆之场 ”.pdf" target="_blank">📄 阅读完整展讯PDF →</a>
+            </div>
+          </details>
         </div>
       </div>
 
@@ -741,6 +813,12 @@
           <h4>罗汉与少年</h4>
           <div class="exh-artist">张裴小刚</div>
           <p>以人物肖像为描绘对象，渐进地、重复地、叠加地塑造与组合，在色彩、图形与形式间构建独特的视觉语言。展期：2023.10.20—10.30。</p>
+          <details class="exh-details">
+            <summary>公众号详情</summary>
+            <div class="detail-body">
+              <a href="pdfs/寨子专栏 "罗汉与少年"个展图集及视频.pdf" target="_blank">📄 图集及视频PDF →</a>
+            </div>
+          </details>
         </div>
       </div>
 
@@ -796,6 +874,12 @@
           <h4>让我们彼此印证</h4>
           <div class="exh-artist">社区 · 互动</div>
           <p>以互相印证与倾听为核心的社区互动展览，在对话与分享中建立人与人之间的信任与联结。</p>
+          <details class="exh-details">
+            <summary>公众号详情</summary>
+            <div class="detail-body">
+              <a href="pdfs/展览现场 让我们彼此映证社区问题的十三种研究.pdf" target="_blank">📄 展览现场回顾PDF →</a>
+            </div>
+          </details>
         </div>
       </div>
 
