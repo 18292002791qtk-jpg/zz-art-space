@@ -408,6 +408,78 @@
     line-height: 1.7;
   }
 
+  /* ====== JOIN GRID ====== */
+  .join-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .join-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 2.2rem 2rem;
+    transition: border-color 0.3s, background 0.3s;
+    position: relative;
+  }
+  .join-card:hover {
+    border-color: rgba(196,154,108,0.3);
+    background: var(--card-hover);
+  }
+  .join-icon {
+    width: 40px; height: 40px;
+    background: var(--accent-dim);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .join-card h3 {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .join-card p {
+    font-size: 0.88rem;
+    color: var(--fg-muted);
+    margin-bottom: 0.8rem;
+    line-height: 1.8;
+  }
+  .join-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .join-card ul li {
+    font-size: 0.85rem;
+    color: var(--fg-muted);
+    padding: 0.3rem 0;
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  .join-card ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.7rem;
+  }
+  .join-contact {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--fg-muted);
+    line-height: 1.8;
+  }
+  .join-contact strong {
+    color: var(--accent);
+    font-weight: 400;
+  }
+
   /* ====== QUOTE ====== */
   blockquote {
     border-left: 1px solid var(--accent);
@@ -478,6 +550,7 @@
     <li><a href="#exhibitions">展览回顾</a></li>
     <li><a href="#workshop">工作坊</a></li>
     <li><a href="#special">特别项目</a></li>
+    <li><a href="#join">参与</a></li>
     <li><a href="#contact">联系</a></li>
   </ul>
 </nav>
@@ -1316,6 +1389,67 @@
       </p>
     </div>
 
+  </div>
+</section>
+
+<!-- ===== 参与 ===== -->
+<section id="join" class="alt-bg">
+  <div class="container">
+    <div class="section-label">Join Us</div>
+    <h2>参与寨子</h2>
+    <div class="section-sub">投稿 · 志愿 · 合作</div>
+
+    <div class="join-grid">
+
+      <div class="join-card">
+        <div class="join-icon">✦</div>
+        <h3>艺术家投稿</h3>
+        <p>寨子空间持续接受艺术家个展、群展方案及作品集投递，为创作者提供专业的展览呈现与策划支持。</p>
+        <ul>
+          <li>接受作品集、展览方案、驻地计划投递</li>
+          <li>提供展览策划、布展指导与销售代理</li>
+          <li>签订正式展览合同，艺术家获销售价格50%</li>
+          <li>与关中艺术合作社、陕西省收藏家协会等机构长期合作</li>
+        </ul>
+        <div class="join-contact">
+          <strong>投递邮箱</strong> 987866823@qq.com<br>
+          邮件标题请注明「艺术家投稿 + 姓名」
+        </div>
+      </div>
+
+      <div class="join-card">
+        <div class="join-icon">◈</div>
+        <h3>志愿者加入</h3>
+        <p>加入寨子空间志愿者团队，深度参与展览策划与现场运营，在实践中积累艺术工作经验。</p>
+        <ul>
+          <li>展览布展、开幕及日常运营协助</li>
+          <li>公共教育活动及工作坊协助</li>
+          <li>新媒体内容编辑与社群运营</li>
+          <li>可获得展览策划实习证明与推荐信</li>
+        </ul>
+        <div class="join-contact">
+          <strong>联系电话</strong> 18292002791<br>
+          或微信搜索「寨子空间」公众号留言
+        </div>
+      </div>
+
+      <div class="join-card">
+        <div class="join-icon">⬡</div>
+        <h3>展览活动合作</h3>
+        <p>寨子空间位于西安美院旁，交通便利，空间灵活，欢迎各类艺术展览、文化活动及商业项目合作。</p>
+        <ul>
+          <li><strong>场地租赁</strong>——200㎡展览空间，含专业灯光、展墙、休息区，可灵活布局</li>
+          <li><strong>展览策划</strong>——提供从方案策划、艺术家对接到布展落地的一站式服务</li>
+          <li>学术讲座、研讨会、发布会等活动场地合作</li>
+          <li>品牌跨界合作与艺术项目定制</li>
+        </ul>
+        <div class="join-contact">
+          <strong>合作洽谈</strong> 18292002791 / 987866823@qq.com<br>
+          欢迎来访实地考察：含光南路37号
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
